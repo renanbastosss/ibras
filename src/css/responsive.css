@@ -1,0 +1,511 @@
+@media (max-width: 1150px) {
+
+    /* -------------------- HISTÓRICO -------------------- */
+
+    .historic-container {
+        max-width: 900px;
+    }
+
+    .historic-numbers {
+        width: 200px;
+    }
+
+    .historic .hist-number {
+        font-size: 50px;
+    }
+
+    .historic .hist-text {
+        font-size: 14px;
+    }
+
+    /* -------------------- GALERIA -------------------- */
+
+    .gallery-container {
+        width: 800px;
+    }
+
+    /* -------------------- FOOTER -------------------- */
+
+    .footer-menu-container {
+        width: 900px;
+    }
+
+    .footer-menu-items {
+        max-width: 180px;
+        font-size: 14px;
+    }
+
+    .footer-copyright-container {
+        width: 900px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    /* -------------------- HEADER -------------------- */
+
+    header .company-name {
+        font-size: 25px;
+        padding: 20px 30px;
+    }
+
+    header .menu {
+        font-size: 12px;
+    }
+
+    header .menu ul {
+        gap: 5px;
+    }
+
+
+    /* -------------------- BANNER -------------------- */
+
+    .banner {
+        margin-top: 123px;
+    }
+
+    .arrow {
+        height: 120px;
+        width: 40px;
+    }
+
+    .arrow img {
+        height: 25px;
+    }
+
+
+    /* -------------------- NOSSA MISSÃO -------------------- */
+
+    .our-mission {
+        padding: 80px;
+    }
+
+    .our-mission-container {
+        max-width: 800px;
+    }
+
+    .our-mission-titles h1 {
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    .our-mission-titles hr {
+        width: 230px;
+        margin-bottom: 40px;
+    }
+
+    .mission {
+        width: 200px;
+    }
+
+    .mission img {
+        height: 230px;
+    }
+
+    .mission span {
+        margin: 27px;
+        font-size: 16px;
+    }
+
+    /* -------------------- HISTÓRICO -------------------- */
+
+
+    .historic-container {
+        max-width: 700px;
+    }
+
+    .historic-numbers {
+        width: 200px;
+        gap: 13px;
+        margin-top: 60px;
+    }
+
+    .historic .hist-number {
+        font-size: 50px;
+    }
+
+    .historic .hist-text {
+        font-size: 13px;
+    }
+
+
+    /* -------------------- FALE CONOSCO -------------------- */
+
+    .contact-us {
+        padding: 50px 0 180px 0;
+    }
+
+    .contact-us-container {
+        max-width: 700px;
+    }
+
+    .contact-us-titles h1 {
+        font-size: 38px;
+    }
+
+    .contact-us-titles p {
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    .contact-us-infos {
+        width: 650px;
+    }
+
+    .contact-us button {
+        bottom: -100px;
+    }
+
+
+    /* -------------------- GALERIA -------------------- */
+
+
+    .gallery {
+        padding: 90px 0;
+    }
+
+    .gallery-container {
+        max-width: 700px;
+    }
+
+    .gallery-titles h1 {
+        font-size: 38px;
+    }
+
+    .gallery-titles p {
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+    .gallery .slides {
+        height: 450px;
+    }
+
+
+    /* -------------------- FOOTER -------------------- */
+
+    .footer-menu {
+        height: 180px;
+        padding: 35px 20px;
+    }
+
+    .footer-menu-container {
+        width: 750px;
+        gap: 15px;
+    }
+
+    .footer-menu-items {
+        max-width: 170px;
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .footer-copyright-container {
+        width: 700px;
+    }
+
+    footer p {
+        padding: 25px 10px;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+
+    /* -------------------- HEADER -------------------- */
+
+    header .company-name {
+        font-size: 14px;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    header .menu {
+        height: 50px;
+        justify-content: end;
+    }
+
+    header .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 70vw;
+        background-color: var(--primary-green);
+        text-align: left;
+        margin-top: 49px;
+    }
+    
+    header .menu-opener {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 25px;
+    }
+
+
+    /* -------------------- BANNER -------------------- */
+
+    .banner {
+        height: 400px;
+        margin-top: 96px;
+    }
+
+    .arrow {
+        height: 50px;
+        width: 20px;
+        border-radius: 6px;
+        top: 40%;
+    }
+
+    .arrow.back {
+        left: 10px;
+    }
+    
+    .arrow.forward {
+        right: 10px;
+    }
+    
+    .arrow img {
+        height: 10px;
+    }
+    
+
+
+    /* -------------------- NOSSA MISSÃO -------------------- */
+
+    .our-mission {
+        padding: 50px;
+    }
+
+    .our-mission-container {
+        max-width: 300px;
+    }
+
+    .our-mission-titles {
+        margin-bottom: 0px;
+    }
+
+    .our-mission-titles h1 {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .our-mission-titles hr {
+        width: 170px;
+        height: 2px;
+        margin-bottom: 30px;
+    }
+
+    .our-mission-titles p {
+        max-width: 300px;
+        font-size: 13px;
+    }
+
+    .missions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission img {
+        margin-top: 50px;
+        height: 300px;
+    }
+
+    .mission span {
+        margin: 20px;
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .mission p {
+        font-size: 13px;
+    }
+
+
+    /* -------------------- HISTÓRICO -------------------- */
+
+    .historic {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .historic-container {
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historic-numbers {
+        gap: 10px;
+        margin-top: 45px;
+    }
+
+    .historic .hist-number {
+        font-size: 60px;
+    }
+
+
+    /* -------------------- FALE CONOSCO -------------------- */
+
+    .contact-us {
+        padding: 50px 0 150px 0;
+    }
+
+    .contact-us-container {
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .contact-us-titles h1 {
+        font-size: 25px;
+    }
+
+    .contact-us-titles p {
+        line-height: 28px;
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .contact-us-infos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .contact-us-infos input,
+    select {
+        font-size: 14px;
+    }
+
+    .contact-us #name,
+    #phone,
+    #state,
+    #country {
+        width: 90%;
+        order: 1;
+    }
+
+    .contact-us #email {
+        width: 90%;
+        order: 3;
+    }
+
+    .contact-us #message {
+        width: 90%;
+        padding-bottom: 80px;
+        order: 4;
+    }
+
+    .contact-us button {
+        bottom: -90px;
+        right: 15px;
+    }
+
+    #state {
+        order: 2;
+    }
+
+
+    /* -------------------- NOVA SECÇÃO -------------------- */
+
+    .new-section h1 {
+        font-size: 30px;
+    }
+
+
+    /* -------------------- GALERIA -------------------- */
+
+
+    .gallery {
+        padding: 50px 0;
+    }
+
+    .gallery-container {
+        width: 300px;
+    }
+
+    .gallery-titles h1 {
+        font-size: 25px;
+    }
+
+    .gallery-titles p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .gallery .slides {
+        display: none;
+    }
+
+    .gallery .manual-navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .gallery .manual-navigation .manual-btn {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0px;
+    }
+
+    .gallery .manual-navigation .manual-btn img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery .manual-btn:hover {
+        transform: scale(1.00);
+    }
+
+
+    /* -------------------- FOOTER -------------------- */
+
+    .footer-menu {
+        height: auto;
+        padding: 30px;
+    }
+
+    .footer-menu-container {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+
+    .footer-menu-items {
+        width: 120px;
+        gap: 8px;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .footer-menu-items.address{
+        min-width: 300px;
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .footer-copyright-container {
+        width: 300px;
+        gap: 10px;
+    }
+
+    footer p {
+        padding: 15px 0px;
+        font-size: 12px;
+    }
+}
