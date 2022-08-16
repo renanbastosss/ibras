@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'helvetica', sans-serif;
     overflow-x: hidden;
 }
 
@@ -12,11 +12,18 @@ body {
     --secundary-blue: #322b72;
 }
 
-:root{
+:root {
     --primary-color: #333;
     --secundary-color: #EEE;
     --shadow-color: #CCC;
     --text-color: #FFF;
+}
+
+.section-title {
+    color: var(--primary-green);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
 }
 
 /* -------------------- HEADER -------------------- */
@@ -29,11 +36,20 @@ header {
 
 header .company-name-container {
     background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header .company-name-container img {
+    width: auto;
+    height: 80px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 header .company-name {
     font-size: 30px;
-    padding: 25px 40px;
+    padding: 25px;
 }
 
 header .menu {
@@ -41,12 +57,14 @@ header .menu {
     color: #DCE0DC;
     text-transform: uppercase;
     font-size: 13px;
+    font-family: 'helvetica-bold';
     display: flex;
     justify-content: center;
     width: 100vw;
+    /* padding-left: 50px; */
 }
 
-header .menu ul{
+header .menu ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -60,16 +78,21 @@ header .menu li {
 
 header .menu li:hover {
     background-color: var(--secundary-green);
-    color: #312F2F;
+    color: var(--secundary-color);
 }
 
 header .menu ul .active {
     background-color: var(--secundary-green);
-    color: #312F2F;
+    color: var(--primary-yellow);
 }
 
 header .menu-opener {
     display: none;
+}
+
+header .menu-socials {
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -146,30 +169,25 @@ header .menu-opener {
 
 /* -------------------- NOSSA MISSÃO -------------------- */
 
-.our-mission {
+.about-us {
     padding: 100px;
+    text-align: justify;
+
 }
 
-.our-mission-container {
+.about-us-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.our-mission-titles {
+.about-us-titles {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom   : 50px;
+    margin-bottom: 50px;
 }
 
-.our-mission-titles h1 {
-    color: var(--primary-green);
-    font-size: 40px;
-    text-transform: uppercase;
-    padding: 15px;
-}
-
-.our-mission-titles hr {
+.about-us-titles hr {
     width: 270px;
     height: 2px;
     background-color: var(--primary-green);
@@ -178,9 +196,9 @@ header .menu-opener {
     margin-bottom: 50px;
 }
 
-.our-mission-titles p {
+.about-us-titles p {
     max-width: 800px;
-    text-align: center;
+    font-size: 18px;
 }
 
 .missions {
@@ -193,11 +211,10 @@ header .menu-opener {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    text-align: center;
-    }
+}
 
 .mission img {
-    height: 300px;
+    height: 350px;
     width: auto;
 }
 
@@ -208,7 +225,7 @@ header .menu-opener {
 }
 
 .mission p {
-    max-width: 250px;
+    max-width: 260px;
     font-size: 14px;
 }
 
@@ -252,14 +269,22 @@ header .menu-opener {
 }
 
 
-/* -------------------- IMAGEM DAS MÃOS -------------------- */
+/* -------------------- DOAÇÕES -------------------- */
+
+.doe-bg-cover {
+    width: 100vw;
+    height: 755px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+}
 
 .bg-image-01 {
-    background-image: url(../images/hands.png);
+    background-image: url(../images/doe.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    width: 100vw;
+    height: 755px;
 }
 
 
@@ -281,13 +306,6 @@ header .menu-opener {
     align-items: center;
 }
 
-.contact-us-titles h1 {
-    color: var(--primary-green);
-    text-transform: uppercase;
-    font-size: 40px;
-    margin: 20px;
-}
-
 .contact-us-titles p {
     color: #B8D0B6;
     line-height: 30px;
@@ -297,7 +315,7 @@ header .menu-opener {
     margin-bottom: 40px;
 }
 
-.contact-us-infos {  
+.contact-us-infos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -307,7 +325,8 @@ header .menu-opener {
     position: relative;
 }
 
-.contact-us-infos input, select {
+.contact-us-infos input,
+select {
     background-color: transparent;
     border: none;
     border-bottom: solid 2px #B8D0B6;
@@ -317,11 +336,14 @@ header .menu-opener {
     color: #CCC;
 }
 
-.contact-us-infos select{
+.contact-us-infos select {
     color: gray;
 }
 
-.contact-us #name, #phone, #state, #country {
+.contact-us #name,
+#phone,
+#state,
+#country {
     width: 45%;
 }
 
@@ -346,21 +368,48 @@ header .menu-opener {
 }
 
 
-/* -------------------- NOVA SECÇÃO -------------------- */
+/* -------------------- SERVIÇOS -------------------- */
 
-.new-section {
-    height: 100vh;
-    background-color: var(--primary-yellow);
+.services {
+    padding: 100px;
+}
+
+.services-container {
+    height: auto;
+    background-color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.new-section h1 {
-    color: #fff;
-    font-size: 40px;
+.services-infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px;
 }
 
+.services-info {
+    width: 563px;
+    height: 550px;
+}
+
+.services-info.text {
+    background-color: var(--primary-yellow);
+    padding: 35px;
+    font-size: 23px;
+}
+
+.services-info.text ul {
+    list-style: disc;
+    padding: 30px;
+}
+
+
+.services-container span {
+    font-size: 18px;
+}
 
 /* -------------------- GALERIA -------------------- */
 
@@ -371,7 +420,7 @@ header .menu-opener {
 
 .gallery-container {
     margin: 0 auto;
-    width: 900px;
+    width: 1000px;
     height: 100%;
     overflow: hidden;
 }
@@ -382,30 +431,22 @@ header .menu-opener {
     align-items: center;
 }
 
-.gallery-titles h1 {
-    color: var(--primary-green);
-    text-transform: uppercase;
-    font-size: 40px;
+.gallery-titles p {
+    max-width: 800px;
+    text-align: justify;
+    font-size: 18px;
     margin: 20px;
 }
 
-.gallery-titles p {
-    max-width: 700px;
-    text-align: center;
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
 .gallery .slides {
-    width: 1000%;
-    height: 500px;
+    width: 100%;
+    height: 550px;
     display: flex;
     margin: 20px 0;
 }
 
 .gallery .slide {
-    width: 10%;
-    height: 100%;
+    flex: 1;
     transition: 0.8s all ease;
 }
 
@@ -413,9 +454,10 @@ header .menu-opener {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer ;
 }
 
-.gallery .manual-navigation {
+/* .gallery .manual-navigation {
     display: flex;
     gap: 10px;
     margin: 0 15px;
@@ -438,9 +480,9 @@ header .menu-opener {
     width: 110px;
     height: 110px;
     object-fit: cover;
-}
+} */
 
-.gallery .selected {
+/* .gallery .selected {
     opacity: 0.5;
 }
 
@@ -467,7 +509,7 @@ header .menu-opener {
     width: 90%;
     height: auto;
     text-align: center;
-}
+} */
 
 
 /* -------------------- FOOTER -------------------- */
@@ -480,28 +522,40 @@ footer {
 .footer-menu {
     height: 200px;
     background-color: #1B2D31;
-    padding: 30px;
 }
 
 .footer-menu-container {
     width: 1150px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-menu-items {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 300px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;
-    max-width: 200px;
+    align-items: center;
     gap: 20px;
-    font-size: 15px;
 }
 
-.footer-menu a {
-    text-decoration: none;
-    color: #B8D0B6;
+.footer-menu-items img {
+    width: 30px;
+}
+
+.footer-menu-items.adress {
+    font-size: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    width: 1000px;
+    margin: auto;
 }
 
 .footer-copyright-container {
@@ -510,6 +564,28 @@ footer {
     margin: 0 auto;
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-socials img {
+    width: 30px;
+}
+
 footer p {
     padding: 25px 10px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.whatsapp img {
+    width: 60px;
 }

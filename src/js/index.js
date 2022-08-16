@@ -66,25 +66,27 @@ smallPhotos.forEach(photo => {
 
 // ---------------------------------------- GALERIA MOBILE ----------------------------------------//
 
-const gallery = document.querySelectorAll('.gallery-small-img');
-const modalPhotos = document.querySelector('.gallery-modal');
-const photoContainer = document.querySelector('.gallery-modal-container img')
-const closerPhoto = document.querySelector('.container-imagem span')
+// const gallery = document.querySelectorAll('.gallery-small-img');
+// const modalPhotos = document.querySelector('.gallery-modal');
+// const photoContainer = document.querySelector('.gallery-modal-container img')
+// const closerPhoto = document.querySelector('.container-imagem span')
 
-gallery.forEach(photo => {
-    photo.addEventListener('click', () => {
-        let srcPhoto = photo.getAttribute('src');
+// gallery.forEach(photo => {
+//     photo.addEventListener('click', () => {
+//         if (window.screen.width < 600) {
+//         let srcPhoto = photo.getAttribute('src');
 
-        modalPhotos.style.display = 'block';
-        photoContainer.setAttribute('src', srcPhoto)
-    });
-});
+//         modalPhotos.style.display = 'block';
+//         photoContainer.setAttribute('src', srcPhoto)
+//         }
+//     });
+// });
 
-function closeModal() {
-    modalPhotos.style.display = 'none';
-}
+// function closeModal() {
+//     modalPhotos.style.display = 'none';
+// }
 
-modalPhotos.addEventListener('click', closeModal);
+// modalPhotos.addEventListener('click', closeModal);
 
 
 // ---------------------------------------- HEADER BAR ----------------------------------------//
@@ -127,12 +129,11 @@ menuItens.forEach(item => {
 
 function changeMenuItem() {
     let home = document.getElementById('#home')
-    let ourMission = document.getElementById('#our-mission')
-    let historic = document.getElementById('#historic')
+    let aboutUs = document.getElementById('#about-us')
+    let doe = document.getElementById('#doe')
     let contactUs = document.getElementById('#contact-us')
-    let newSection = document.getElementById('#new-section')
+    let services = document.getElementById('#services')
     let gallery = document.getElementById('#gallery')
-    let footer = document.getElementById('#footer')
     let scroll = this.scrollY;
 
     if (scroll >= 0 || scroll < 300) {
@@ -142,32 +143,27 @@ function changeMenuItem() {
 
     if (scroll >= 400) {
         document.querySelector('.active').classList.remove('active');
-        ourMission.classList.add('active')
+        aboutUs.classList.add('active')
     }
 
-    if (scroll >= 1350) {
+    if (scroll >= 1650) {
         document.querySelector('.active').classList.remove('active');
-        historic.classList.add('active')
+        doe.classList.add('active')
     }
 
-    if (scroll >= 2300) {
+    if (scroll >= 2600) {
         document.querySelector('.active').classList.remove('active');
         contactUs.classList.add('active');
     }
 
-    if (scroll >= 3000) {
+    if (scroll >= 3300) {
         document.querySelector('.active').classList.remove('active');
-        newSection.classList.add('active');
+        services.classList.add('active');
     }
 
-    if (scroll > 3700) {
+    if (scroll > 4400) {
         document.querySelector('.active').classList.remove('active');
         gallery.classList.add('active');
-    }
-
-    if (scroll > 4500) {
-        document.querySelector('.active').classList.remove('active');
-        footer.classList.add('active');
     }
 
 }

@@ -1,39 +1,14 @@
 @font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-Bold.otf);
+    font-family: 'helvetica';
+    src: url(../fonts/Helvetica.ttf);
 }
 
 @font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-BoldItalic.otf);
-}
-
-@font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-Light.otf);
-}
-
-@font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-LightItalic.otf);
-}
-
-@font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-Medium.otf);
-}
-
-@font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-MediumItalic.otf);
+    font-family: 'helvetica-bold';
+    src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
     font-family: 'lemon-milk';
     src: url(../fonts/LEMONMILK-Regular.otf);
-}
-
-@font-face {
-    font-family: 'lemon-milk';
-    src: url(../fonts/LEMONMILK-RegularItalic.otf);
 }
