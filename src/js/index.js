@@ -29,39 +29,39 @@ arrowLeft.addEventListener('click', goLeft);
 
 // ---------------------------------------- GALLERY ----------------------------------------//
 
-const smallPhotos = document.querySelectorAll('.manual-btn');
-const firstPhoto = document.querySelector('.slide.first');
-const smallPhotosContainer = document.querySelector('.manual-navigation')
+// const smallPhotos = document.querySelectorAll('.manual-btn');
+// const firstPhoto = document.querySelector('.slide.first');
+// const smallPhotosContainer = document.querySelector('.manual-navigation')
 
-smallPhotos.forEach(photo => {
-    photo.addEventListener('click', (element) => {
+// smallPhotos.forEach(photo => {
+//     photo.addEventListener('click', (element) => {
 
-        if (window.screen.width < 600) {
-            return
-        } else {
-            let photoSelected = element.target
-            let imgNumber = photoSelected.id.slice(3)
-            let marginSlide = imgNumber * 10 - 10
-            let marginSmallContainer = imgNumber * 120 - 470
+//         if (window.screen.width < 600) {
+//             return
+//         } else {
+//             let photoSelected = element.target
+//             let imgNumber = photoSelected.id.slice(3)
+//             let marginSlide = imgNumber * 10 - 10
+//             let marginSmallContainer = imgNumber * 120 - 470
 
-            firstPhoto.style.marginLeft = `-${marginSlide}%`
+//             firstPhoto.style.marginLeft = `-${marginSlide}%`
 
-            if (imgNumber <= 3) {
-                smallPhotosContainer.style.marginLeft = '15px'
-            } else {
-                smallPhotosContainer.style.marginLeft = `-${marginSmallContainer}px`
-            }
+//             if (imgNumber <= 3) {
+//                 smallPhotosContainer.style.marginLeft = '15px'
+//             } else {
+//                 smallPhotosContainer.style.marginLeft = `-${marginSmallContainer}px`
+//             }
 
-            let elementSelected = document.querySelector('.selected')
-            if (elementSelected != null) {
-                elementSelected.classList.remove('selected')
-            }
+//             let elementSelected = document.querySelector('.selected')
+//             if (elementSelected != null) {
+//                 elementSelected.classList.remove('selected')
+//             }
 
-            photoSelected.classList.add('selected')
-        }
+//             photoSelected.classList.add('selected')
+//         }
 
-    })
-});
+//     })
+// });
 
 
 // ---------------------------------------- GALERIA MOBILE ----------------------------------------//
@@ -242,3 +242,26 @@ menuOpener.addEventListener('click', () => {
 //     }
 // })
 
+// ------------------------ ESTRUTURA (GALERIA) ------------------------ //
+
+const photos = document.querySelectorAll('.slide');
+
+const openPhoto = ({ target }) => {
+    let photoSelected = target.parentNode;
+    let photoOpened = document.querySelector('.photo-selected');
+
+    if (photoOpened != null) {
+        photoOpened.classList.remove('photo-selected');
+    }
+
+    photoSelected.classList.add('photo-selected');
+
+    if (photoSelected == photoOpened){ // -----> Para fechar a foto selecionada
+        photoSelected.classList.remove('photo-selected');
+    }
+
+}
+
+photos.forEach(photo => {
+    photo.addEventListener('click', openPhoto);
+});
