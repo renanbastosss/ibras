@@ -1,0 +1,98 @@
+.banner {
+    height: calc(100vh - 129px);
+    overflow: hidden;
+    margin-top: 134px;
+    position: relative;
+    border-bottom: 5px solid var(--primary-green);
+}
+
+.banner .sliders {
+    height: 100%;
+    width: 305vw;
+    transition: all ease 0.8s;
+}
+
+.banner .slide {
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+}
+
+.banner .slidearea-01 {
+    background-image: url(../images/IBRAS-MARCA.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .slidearea-02 {
+    background-image: url(../images/IBRAS-MARCA-02.jpeg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .slidearea-03 {
+    background-image: url(../images/IBRAS-MARCA-04.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #7F8D7C;
+    top: 35%;
+    height: 150px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 0.9;
+}
+
+.arrow.back {
+    left: 20px;
+}
+
+.arrow.forward {
+    right: 20px;
+}
+
+.arrow img {
+    margin: auto;
+    height: 30px;
+}
+
+
+/* -------------------- NOSSA MISSÃO -------------------- */
+
+.about-us {
+    padding-top: 100px;
+    text-align: justify;
+}
+
+.about-us-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-us-titles h1 {
+    margin-bottom: 40px;
+}
+
+.about-us-titles p {
+    max-width: 800px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
