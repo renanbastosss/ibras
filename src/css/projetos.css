@@ -1,0 +1,15 @@
+
+/* -------------------- PROJETOS -------------------- */
+
+.projects {
+    height: 100vh;
+    background-color: var(--primary-yellow);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h1 {
+    color: #fff;
+}

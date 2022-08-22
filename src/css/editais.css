@@ -1,0 +1,14 @@
+/* -------------------- EDITAIS -------------------- */
+
+.editais {
+    height: 100vh;
+    background-color: var(--primary-yellow);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editais h1 {
+    color: #fff;
+}

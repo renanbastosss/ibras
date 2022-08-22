@@ -1,0 +1,21 @@
+/* -------------------- DOAÇÕES -------------------- */
+
+.doe {
+    margin-top: 134px;
+}
+
+.doe-bg-cover {
+    width: 100vw;
+    height: 755px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+.bg-image-01 {
+    background-image: url(../images/doe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 755px;
+}

@@ -1,0 +1,42 @@
+
+.services {
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.services-container {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px;
+}
+
+.services-info {
+    width: 563px;
+    height: 550px;
+}
+
+.services-info.text {
+    background-color: var(--primary-yellow);
+    padding: 35px;
+    font-size: 23px;
+}
+
+.services-info.text ul {
+    list-style: disc;
+    padding: 30px;
+}
+
+
+.services-container span {
+    font-size: 18px;
+}

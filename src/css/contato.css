@@ -1,0 +1,81 @@
+
+
+/* -------------------- FALE CONOSCO -------------------- */
+
+.contact-us {
+    /* background-color: var(--primary-blue); */
+    padding: 50px 0 150px 0;
+    margin-top: 100px;
+}
+
+.contact-us-container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.contact-us-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-titles p {
+    /* color: #B8D0B6; */
+    line-height: 30px;
+    max-width: 550px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.contact-us-infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-us-infos input,
+select {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #B8D0B6;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    color: #CCC;
+}
+
+.contact-us-infos select {
+    color: gray;
+}
+
+.contact-us #name,
+#phone,
+#state,
+#country {
+    width: 45%;
+}
+
+.contact-us #email {
+    width: 94%;
+}
+
+.contact-us #message {
+    width: 94%;
+    padding-bottom: 80px;
+}
+
+.contact-us button {
+    background-color: var(--primary-green);
+    padding: 15px 50px;
+    color: #fff;
+    border: none;
+    position: absolute;
+    bottom: -80px;
+    right: 20px;
+    cursor: pointer;
+}
