@@ -1,14 +1,27 @@
 /* -------------------- EDITAIS -------------------- */
 
 .editais {
-    height: 100vh;
-    background-color: var(--primary-yellow);
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.editais h1 {
-    color: #fff;
+.editais-container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.editais-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editais-titles p {
+    max-width: 800px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px;
 }

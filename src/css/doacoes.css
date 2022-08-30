@@ -1,21 +1,57 @@
 /* -------------------- DOAÇÕES -------------------- */
 
-.doe {
-    margin-top: 134px;
+.doacoes {
+    margin-top: 100px;
+    padding: 100px;
 }
 
-.doe-bg-cover {
-    width: 100vw;
-    height: 755px;
-    background-color: rgba(255, 255, 255, 0);
+.doacoes-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.doacoes-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doacoes-titles p {
+    max-width: 800px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.doe {
+    height: 500px;
+    position: relative;
+    margin: 50px;
+}
+
+.bg-image-01 img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     position: absolute;
 }
 
-.bg-image-01 {
-    background-image: url(../images/doe.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 755px;
+.doe-frame {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--primary-green);
+    position: absolute;
+    z-index: 0;
+}
+
+.doe .frame-left {
+    top: -8px;
+    left: -8px;
+}
+
+.doe .frame-right {
+    bottom: -8px;
+    right: -8px;
 }
