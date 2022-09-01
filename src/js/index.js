@@ -7,15 +7,18 @@ const checkScroll = () => {
     let scrollTop = window.scrollY
 
     if (window.screen.width < 690) {
-        if (scrollTop < 94) {
+        header.style.transition = '0.3s'
+        if (scrollTop < 134) {
             header.style.top = '0px'
             header.style.position = 'absolute'
         } else if (scrollTop < lastScrollTop) {
-            header.style.top = '-50px'
+            header.style.top = '-84px'
             header.style.position = 'fixed'
         } else {
-            header.style.top = '-50px'
-            header.style.position = 'fixed'
+            header.style.top = '-134px'
+            setTimeout(() => {
+                header.style.position = 'fixed'
+            }, 500)
         }
     } else if (window.screen.width < 900) {
         if (scrollTop < 123) {
@@ -42,6 +45,8 @@ const checkScroll = () => {
     }
 
     lastScrollTop = scrollTop;
+    console.log(scrollTop);
+    console.log(lastScrollTop);
 };
 
 window.addEventListener('scroll', function () {
@@ -50,25 +55,24 @@ window.addEventListener('scroll', function () {
 
 // ----------------- MOBILE ---------------- //
 
-// const menuOpener = document.querySelector('.menu-opener');
-// const menu = document.querySelector('.menu ul');
-// const mobileScreen = window.screen.width <= 690
+const menuOpener = document.querySelector('.menu-opener');
+const menu = document.querySelector('.menu ul');
+const mobileScreen = window.screen.width <= 690
 
-// function closeMenu() {
-//     menu.style.display = 'none';
-// }
+function closeMenu() {
+    menu.style.display = 'none';
+}
 
-// function openMenu() {
-//     menu.style.display = 'flex';
-// }
+function openMenu() {
+    menu.style.display = 'flex';
+}
 
-// menuOpener.addEventListener('click', () => {
-//     menu.style.display == 'flex' ? closeMenu() : openMenu();
-// })
+menuOpener.addEventListener('click', () => {
+    menu.style.display == 'flex' ? closeMenu() : openMenu();
+})
 
-// menu.addEventListener('click', function (e) {
-//     if (e.target != this && mobileScreen) {
-//         closeMenu();
-//     }
-// })
-
+menu.addEventListener('click', function (e) {
+    if (e.target != this && mobileScreen) {
+        closeMenu();
+    }
+})

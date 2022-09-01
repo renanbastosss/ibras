@@ -3,25 +3,12 @@
 /* -------------------- FALE CONOSCO -------------------- */
 
 .contact-us {
-    /* background-color: var(--primary-blue); */
-    padding: 50px 0 150px 0;
+    padding: 100px 0 180px 0;
     margin-top: 100px;
 }
 
-.contact-us-container {
-    width: 1000px;
-    margin: 50px auto;
-}
-
-.contact-us-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .contact-us-titles p {
-    /* color: #B8D0B6; */
-    line-height: 30px;
+    line-height: 28px;
     max-width: 550px;
     text-align: center;
     font-size: 17px;

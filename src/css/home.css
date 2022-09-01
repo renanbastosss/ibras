@@ -71,28 +71,14 @@
 /* -------------------- NOSSA MISSÃO -------------------- */
 
 .about-us {
-    padding-top: 100px;
-    text-align: justify;
-}
-
-.about-us-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.about-us-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+    padding: 100px 0 50px;
 }
 
 .about-us-titles h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .about-us-titles p {
-    max-width: 800px;
     font-size: 20px;
     margin-bottom: 100px;
 }

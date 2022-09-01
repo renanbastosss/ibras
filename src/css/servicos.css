@@ -1,41 +1,17 @@
 .services {
-    margin-top: 100px;
-    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.services-container {
-    width: 1000px;
-    margin: 50px auto;
-}
-
-.services-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.services-titles p {
-    max-width: 800px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px 0 5px;
-}
-
 .services ul {
     text-align: center;
     font-size: 25px;
+    margin-top: 40px;
 }
 
 .services li {
     margin: 25px;
-}
-
-.services-container span {
-    font-size: 18px;
-    margin: 0 auto;
 }
 
 .services-infos {
@@ -43,4 +19,9 @@
     flex-direction: column;
     width: 100%;
     margin-top: 40px;
+}
+
+.services-container span {
+    font-size: 18px;
+    margin: 0 auto;
 }

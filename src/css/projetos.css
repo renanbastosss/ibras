@@ -2,27 +2,7 @@
 /* -------------------- PROJETOS -------------------- */
 
 .projects {
-    margin-top: 100px;
-    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.projects-container {
-    width: 1000px;
-    margin: 50px auto;
-}
-
-.projects-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects-titles p {
-    max-width: 800px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px;
 }

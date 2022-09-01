@@ -1,30 +1,5 @@
 /* -------------------- DOAÇÕES -------------------- */
 
-.doacoes {
-    margin-top: 100px;
-    padding: 100px;
-}
-
-.doacoes-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.doacoes-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.doacoes-titles p {
-    max-width: 800px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px;
-}
-
 .doe {
     height: 500px;
     position: relative;

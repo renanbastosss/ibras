@@ -1,31 +1,5 @@
 
 
-.our-history {
-    margin-top: 100px;
-    padding: 100px;
-}
-
-.our-history-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.our-history-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.our-history-titles p {
-    max-width: 800px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px 0 10px;
-}
-
-
 /* -------------------- HISTÓRICO -------------------- */
 
 .historic {
@@ -34,8 +8,6 @@
 }
 
 .historic-container {
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -70,27 +42,11 @@
 
 
 .gallery {
-    padding: 100px;
-}
-
-.gallery-container {
-    margin: 0 auto;
-    width: 1000px;
-    height: 100%;
-    overflow: hidden;
-}
-
-.gallery-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 100px 0;
 }
 
 .gallery-titles p {
-    max-width: 800px;
-    text-align: justify;
-    font-size: 18px;
-    margin: 20px;
+    margin: 30px;
 }
 
 .gallery .slides {
