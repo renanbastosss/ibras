@@ -48,6 +48,19 @@
 
 @media (max-width: 900px) and (min-width: 691px) {
 
+    .container {
+        max-width: 600px;
+    }
+
+    .title-and-text h1 {
+        font-size: 30px;
+    }
+    
+    .title-and-text p {
+        max-width: 600px;
+        font-size: 15px;
+    }
+
     /* -------------------- HEADER -------------------- */
 
     header .company-name {
@@ -66,46 +79,36 @@
 
     /* -------------------- BANNER -------------------- */
 
-    .banner {
-        margin-top: 123px;
-    }
-
     .arrow {
         height: 120px;
         width: 40px;
-    }
-
-    .arrow img {
-        height: 25px;
+        top: 43%;
     }
 
 
     /* -------------------- NOSSA MISSÃO -------------------- */
 
-    .our-mission {
-        padding: 80px;
+    .about-us {
+        padding: 50px 0;
     }
 
-    .our-mission-container {
-        max-width: 800px;
-    }
-
-    .our-mission-titles h1 {
-        font-size: 35px;
-        padding: 10px;
+    .about-us-titles p {
+        margin-bottom: 50px;
     }
 
     /* -------------------- HISTÓRICO -------------------- */
 
+    .historic {
+        height: auto;
+    }
 
     .historic-container {
         max-width: 700px;
     }
 
     .historic-numbers {
-        width: 200px;
         gap: 13px;
-        margin-top: 60px;
+        margin: 40px 0;
     }
 
     .historic .hist-number {
@@ -113,87 +116,80 @@
     }
 
     .historic .hist-text {
-        font-size: 13px;
+        font-size: 12px;
     }
 
+    /* -------------------- DOAÇÕES -------------------- */
+
+    .doe {
+        margin: 50px 0;
+        height: 331px;
+    }
 
     /* -------------------- FALE CONOSCO -------------------- */
 
-    .contact-us {
-        padding: 50px 0 180px 0;
-    }
-
-    .contact-us-container {
-        max-width: 700px;
-    }
-
-    .contact-us-titles h1 {
-        font-size: 38px;
-    }
-
-    .contact-us-titles p {
-        line-height: 28px;
-        font-size: 15px;
-    }
 
     .contact-us-infos {
         width: 650px;
     }
 
-    .contact-us button {
-        bottom: -100px;
-    }
-
 
     /* -------------------- GALERIA -------------------- */
 
-
-    .gallery {
-        padding: 90px 0;
-    }
-
     .gallery-container {
         max-width: 700px;
-    }
-
-    .gallery-titles h1 {
-        font-size: 38px;
-    }
-
-    .gallery-titles p {
-        max-width: 600px;
-        font-size: 15px;
     }
 
     .gallery .slides {
         height: 450px;
     }
 
+     /* -------------------- PROJETOS -------------------- */
+    
+     .projects-list {
+        max-width: 650px;
+    }
+
 
     /* -------------------- FOOTER -------------------- */
 
     .footer-menu {
-        height: 180px;
-        padding: 35px 20px;
+        height: auto;
+        padding: 10px;
     }
-
+    
     .footer-menu-container {
-        width: 750px;
-        gap: 15px;
+        width: 700px;
     }
-
+    
     .footer-menu-items {
-        max-width: 170px;
-        gap: 15px;
+        max-width: 300px;
+        font-size: 13px;
+    }
+    
+    .footer-menu-items.adress {
         font-size: 12px;
     }
-
+    
+    .footer-copyright {
+        width: 700px;
+    }
+    
     .footer-copyright-container {
         width: 700px;
     }
-
+    
+    .footer-creaters {
+        width: 300px;
+        font-size: 10px;
+    }
+    
     footer p {
-        padding: 25px 10px;
+        font-size: 12px;
+    }
+
+    .whatsapp img {
+        width: 50px;
     }
 
 }
@@ -287,6 +283,7 @@
 
     .about-us-titles p {
         margin-bottom: 50px;
+        text-align: center;
     }
 
 
@@ -351,32 +348,6 @@
         flex: 25;
     }
 
-    /* .gallery .manual-navigation {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin: 20px;
-        overflow: hidden;
-        transition: 0.5s ease;
-    }
-
-    .gallery .manual-navigation .manual-btn {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 0px;
-    }
-
-    .gallery .manual-navigation .manual-btn img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .gallery .manual-btn:hover {
-        transform: scale(1.00);
-    } */
-
-
 
     /* -------------------- SERVIÇOS -------------------- */
         
@@ -397,7 +368,16 @@
         font-size: 11px;
         text-align: center;
     }
+
+    /* -------------------- PROJETOS -------------------- */
     
+    .projects-list {
+        max-width: 330px;
+    }
+
+    .projects a {
+        font-size: 11px;
+    }
 
     /* -------------------- FALE CONOSCO -------------------- */
 

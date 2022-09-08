@@ -21,17 +21,6 @@ const checkScroll = () => {
             }, 500)
         }
     } else if (window.screen.width < 900) {
-        if (scrollTop < 123) {
-            header.style.top = '0px'
-            header.style.position = 'absolute'
-        } else if (scrollTop < lastScrollTop) {
-            header.style.top = '-69px'
-            header.style.position = 'fixed'
-        } else {
-            header.style.top = '-69px'
-            header.style.position = 'fixed'
-        }
-    } else {
         if (scrollTop < 84) {
             header.style.top = '0px'
             header.style.position = 'absolute'
@@ -40,6 +29,17 @@ const checkScroll = () => {
             header.style.position = 'fixed'
         } else {
             header.style.top = '-84px'
+            header.style.position = 'fixed'
+        }
+    } else {
+        if (scrollTop < 86) {
+            header.style.top = '0px'
+            header.style.position = 'absolute'
+        } else if (scrollTop < lastScrollTop) {
+            header.style.top = '-86px'
+            header.style.position = 'fixed'
+        } else {
+            header.style.top = '-86px'
             header.style.position = 'fixed'
         }
     }

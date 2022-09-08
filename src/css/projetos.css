@@ -4,5 +4,32 @@
 .projects {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.projects-list {
+    margin: 20px;
+    width: 1000px;
+}
+
+.projects h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.projects li {
+    gap: 5px;
+    margin: 10px;
+}
+
+.projects a {
+    font-size: 13px;
+    margin: auto;
+}
+
+.projects a:hover {
+    color: #999;
 }
