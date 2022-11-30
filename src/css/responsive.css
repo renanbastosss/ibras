@@ -1,4 +1,4 @@
-@media (max-width: 1150px) {
+@media (max-width: 1150px) and (min-width:976px) {
 
     /* -------------------- HISTÓRICO -------------------- */
 
@@ -26,27 +26,11 @@
 
     /* -------------------- FOOTER -------------------- */
 
-    .footer-menu-container {
-        width: 900px;
-    }
-
-    .footer-menu-items {
-        max-width: 180px;
-        font-size: 14px;
-    }
-
-    .footer-copyright-container {
-        width: 900px;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
 
 }
 
 
-@media (max-width: 900px) and (min-width: 691px) {
+@media (max-width: 975px) and (min-width: 760px) {
 
     .container {
         max-width: 600px;
@@ -94,6 +78,29 @@
 
     .about-us-titles p {
         margin-bottom: 50px;
+    }
+
+
+    /* -------------------- OUR TEAM -------------------- */
+
+    .our-team {
+        width: 700px;
+        margin-bottom: 50px;
+    }
+    
+    .our-team-container {
+        width: 200px;
+    }
+    
+    .our-team-container img {
+        margin-bottom: 20px;
+        border: 1px solid #aaa;
+        height: 180px;
+    }
+    
+    .our-team-container p {
+        margin: 10px 0;
+        font-size: 12px;
     }
 
     /* -------------------- HISTÓRICO -------------------- */
@@ -153,39 +160,16 @@
 
     /* -------------------- FOOTER -------------------- */
 
-    .footer-menu {
-        height: auto;
-        padding: 10px;
-    }
-    
-    .footer-menu-container {
-        width: 700px;
-    }
-    
     .footer-menu-items {
-        max-width: 300px;
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .footer-menu-items.adress {
-        font-size: 12px;
-    }
-    
-    .footer-copyright {
-        width: 700px;
-    }
-    
-    .footer-copyright-container {
-        width: 700px;
-    }
-    
-    .footer-creaters {
-        width: 300px;
         font-size: 10px;
     }
-    
-    footer p {
-        font-size: 12px;
+
+    .footer-copyright {
+        font-size: 10px;
     }
 
     .whatsapp img {
@@ -195,25 +179,26 @@
 }
 
 
-@media (max-width: 690px) {
+@media (max-width: 760px) and (min-width: 420px) {
 
     .section {
         margin-top: 80px;
     }
 
     .container {
-        max-width: 300px;
+        max-width: 600px;
+        width: 90%;
     }
 
     .title-and-text h1 {
-        font-size: 22px;
+        font-size: 23px;
         margin: 20px;
     }
     
     .title-and-text p {
-        max-width: 300px;
+        max-width: 600px;
         font-size: 14px;
-        margin: 20px 0 10px;
+        margin: 15px 0 10px;
     }
 
     /* -------------------- HEADER -------------------- */
@@ -275,15 +260,273 @@
     
 
 
-    /* -------------------- NOSSA MISSÃO -------------------- */
+    /* -------------------- O IBRAS -------------------- */
 
-    .about-us {
-        padding: 50px 0;
+    .our-team {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    
+    .our-team-container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .about-us-titles p {
-        margin-bottom: 50px;
+    .our-team-container p {
+        width: 100%;
+    }
+
+
+    /* -------------------- HISTÓRICO -------------------- */
+
+    .historic {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .historic-container {
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historic-numbers {
+        gap: 10px;
+        margin-top: 45px;
+    }
+
+    .historic .hist-number {
+        font-size: 60px;
+    }
+
+
+    /* -------------------- DOAÇÕES -------------------- */
+
+    .doe {
+        height: 250px;
+        margin: 50px 0;
+    }
+
+    .doe-frame {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--primary-green);
+    }
+
+    .doe .frame-left {
+        top: -6px;
+        left: -6px;
+    }
+
+    .doe .frame-right {
+        bottom: -6px;
+        right: -6px;
+    }
+
+    /* -------------------- GALERIA -------------------- */
+
+    .gallery {
+        padding-top: 50px;
+    }
+
+    .gallery .slides {
+        height: 400px;
+        margin: 20px 0;
+    }
+
+    .gallery .photo-selected {
+        flex: 25;
+    }
+
+
+    /* -------------------- SERVIÇOS -------------------- */
+        
+    .services ul {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .services li {
+        margin: 20px;
+    }
+
+    .services-infos {
+        margin-top: 40px;
+    }
+
+    .services-container span {
+        font-size: 11px;
         text-align: center;
+    }
+
+    /* -------------------- PROJETOS -------------------- */
+    
+    .projects-list {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .projects a {
+        font-size: 11px;
+    }
+
+
+    /* -------------------- FALE CONOSCO -------------------- */
+
+    .contact-us-infos {
+        width: 90%;
+    }
+
+    .contact-us-titles p {
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+
+    /* -------------------- FOOTER -------------------- */
+
+    .footer-menu-items {
+        font-size: 12px;
+    }
+    
+    .footer-menu-items.adress {
+        font-size: 10px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+
+    .whatsapp img {
+        width: 50px;
+    }
+
+}
+
+
+@media (max-width: 419px) {
+
+    body::-webkit-scrollbar {
+        width: thin;
+    }
+
+    .section {
+        margin-top: 40px;
+    }
+
+    .container {
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .title-and-text h1 {
+        font-size: 20px;
+        margin: 20px 0  10px;
+    }
+    
+    .title-and-text p {
+        max-width: 400px;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+
+    .title-and-text h2 {
+        margin: 30px 0 10px;
+        font-size: 18px;
+    }
+
+    /* -------------------- HEADER -------------------- */
+
+    header .company-name-container img {
+        width: auto;
+        height: 60px;
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    header .company-name {
+        font-size: 15px;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    header .menu {
+        height: 40px;
+        justify-content: end;
+    }
+
+    header .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 70vw;
+        background-color: var(--primary-green);
+        text-align: left;
+        margin-top: 35px;
+        gap: 0;
+    }
+    
+    header .menu-opener {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 25px;
+    }
+
+
+     /* -------------------- BANNER -------------------- */
+
+     .banner {
+        height: 300px;
+        margin-top: 104px;
+    }
+
+    .arrow {
+        height: 40px;
+        width: 15px;
+        border-radius: 6px;
+        top: 45%;
+    }
+
+    .arrow.back {
+        left: 10px;
+    }
+    
+    .arrow.forward {
+        right: 10px;
+    }
+    
+    .arrow img {
+        height: 10px;
+    }
+    
+
+
+    /* -------------------- O IBRAS -------------------- */
+
+    .our-team {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    
+    .our-team-container {
+        width: 260px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .our-team-container img {
+        margin-bottom: 20px;
+        border: 1px solid #aaa;
+    }
+    
+    .our-team-container p {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 13px;
     }
 
 
@@ -372,7 +615,7 @@
     /* -------------------- PROJETOS -------------------- */
     
     .projects-list {
-        max-width: 330px;
+        max-width: 90%;
     }
 
     .projects a {
@@ -381,87 +624,46 @@
 
     /* -------------------- FALE CONOSCO -------------------- */
 
+    .contact-us-infos {
+        width: 90%;
+    }
+
     .contact-us-titles p {
         line-height: 25px;
-        max-width: 300px;
-        font-size: 14px;
-        margin-bottom: 40px;
+        font-size: 13px;
+        margin-bottom: 30px;
     }
-    
-    .contact-us-infos {
-        width: 300px;
-    }
-
-    .contact-us-infos input,
-    select {
-        font-size: 14px;
-    }
-
-    .contact-us #name,
-    #phone,
-    #state,
-    #country {
-        width: 90%;
-        order: 1;
-    }
-
-    .contact-us #email {
-        width: 90%;
-        order: 3;
-    }
-
-    .contact-us #message {
-        width: 90%;
-        padding-bottom: 80px;
-        order: 4;
-    }
-
-    .contact-us button {
-        bottom: -90px;
-        right: 15px;
-    }
-
-    #state {
-        order: 2;
-    }
-
 
 
     /* -------------------- FOOTER -------------------- */
-
-    .footer-menu {
-        height: auto;
-        padding: 9px;
-    }
     
     .footer-menu-container {
-        width: 300px;
+        width: 90%;
     }
     
     .footer-menu-items {
         max-width: 100px;
-        font-size: 10px;
-    }
-    
-    .footer-menu-items.adress {
-        font-size: 9px;
-    }
-    
-    .footer-copyright {
-        width: 300px;
-    }
-    
-    .footer-copyright-container {
-        width: 300px;
-    }
-    
-    .footer-creaters {
-        width: 200px;
         font-size: 8px;
     }
     
+    .footer-menu-items.adress {
+        font-size: 7px;
+    }
+    
+    .footer-copyright {
+        width: 90%;
+    }
+    
+    .footer-copyright-container {
+        width: 180px;
+    }
+    
+    .footer-creaters {
+        width: 130px;
+        font-size: 7px;
+    }
+    
     footer p {
-        padding:10px;
         font-size: 8px;
     }
 

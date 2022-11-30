@@ -3,7 +3,7 @@
     overflow: hidden;
     margin-top: 134px;
     position: relative;
-    border-bottom: 5px solid var(--primary-green);
+    /* border-bottom: 5px solid var(--primary-green); */
 }
 
 .banner .sliders {
@@ -48,10 +48,11 @@
     border-radius: 10px;
     display: flex;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .arrow:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .arrow.back {
@@ -70,15 +71,15 @@
 
 /* -------------------- NOSSA MISSÃO -------------------- */
 
-.about-us {
-    padding: 100px 0 50px;
+.news {
+    margin: 0;
 }
 
-.about-us-titles h1 {
-    margin-bottom: 30px;
+.news-title {
+    align-items: flex-start;
+    margin-bottom: 200px;
 }
 
-.about-us-titles p {
-    font-size: 20px;
-    margin-bottom: 100px;
+.news h1 {
+    margin: 0;
 }

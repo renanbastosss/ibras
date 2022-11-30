@@ -1,27 +1,6 @@
 .services {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.services ul {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 40px;
-}
-
-.services li {
-    margin: 25px;
-}
-
-.services-infos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 40px;
-}
-
-.services-container span {
-    font-size: 18px;
-    margin: 0 auto;
+    align-items: flex-start;
+    min-height: 100vh;
 }

@@ -1,4 +1,28 @@
 
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+.our-team-container {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our-team-container img {
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+}
+
+.our-team-container p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 13px;
+}
 
 /* -------------------- HISTÓRICO -------------------- */
 
