@@ -1,5 +1,24 @@
 @media (max-width: 1150px) and (min-width:976px) {
 
+    /* -------------------- HEADER -------------------- */
+
+    header .company-name {
+        font-size: 25px;
+        padding: 20px 30px;
+    }
+
+    header .menu {
+        font-size: 12px;
+    }
+
+    header .menu ul {
+        gap: 5px;
+    }
+
+    header .menu li {
+        padding: 15px;
+    }
+
     /* -------------------- HISTÓRICO -------------------- */
 
     .historic-container {
@@ -53,11 +72,15 @@
     }
 
     header .menu {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     header .menu ul {
-        gap: 5px;
+        gap: 3px;
+    }
+
+    header .menu li {
+        padding: 15px 10px;
     }
 
 
@@ -387,29 +410,26 @@
     /* -------------------- FOOTER -------------------- */
 
     .footer-menu-items {
-        font-size: 12px;
+        font-size: 9px;
     }
     
     .footer-menu-items.adress {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .footer-copyright {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .whatsapp img {
         width: 50px;
     }
+    
 
 }
 
 
 @media (max-width: 419px) {
-
-    body::-webkit-scrollbar {
-        width: thin;
-    }
 
     .section {
         margin-top: 40px;
@@ -464,6 +484,10 @@
         text-align: left;
         margin-top: 35px;
         gap: 0;
+    }
+
+    header .menu li {
+        padding: 18px 15px;
     }
     
     header .menu-opener {
@@ -654,17 +678,9 @@
         width: 90%;
     }
     
-    .footer-copyright-container {
-        width: 180px;
-    }
-    
-    .footer-creaters {
-        width: 130px;
-        font-size: 7px;
-    }
-    
     footer p {
         font-size: 8px;
+        padding: 15px 0;
     }
 
     .whatsapp img {

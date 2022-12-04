@@ -5,48 +5,61 @@ let lastScrollTop = 0;
 
 const checkScroll = () => {
     let scrollTop = window.scrollY
+    let headerStyle = header.style
 
-    if (window.screen.width < 690) {
-        header.style.transition = '0.3s'
-        if (scrollTop < 134) {
-            header.style.top = '0px'
-            header.style.position = 'absolute'
+    if (window.screen.width <= 419) {
+        if (scrollTop < 64) {
+            headerStyle.top = '0px'
+            headerStyle.position = 'absolute'
         } else if (scrollTop < lastScrollTop) {
-            header.style.top = '-84px'
-            header.style.position = 'fixed'
+            headerStyle.top = '-64px'
+            headerStyle.position = 'fixed'
         } else {
-            header.style.top = '-134px'
-            setTimeout(() => {
-                header.style.position = 'fixed'
-            }, 500)
+            headerStyle.top = '-64px'
+            headerStyle.position = 'fixed'
         }
-    } else if (window.screen.width < 900) {
-        if (scrollTop < 84) {
-            header.style.top = '0px'
-            header.style.position = 'absolute'
-        } else if (scrollTop < lastScrollTop) {
-            header.style.top = '-84px'
-            header.style.position = 'fixed'
-        } else {
-            header.style.top = '-84px'
-            header.style.position = 'fixed'
-        }
+
+    // } else if (window.screen.width > 419 && window.screen.width <= 760) {
+    //     headerStyle.transition = '0.3s'
+    //     if (scrollTop < 64) {
+    //         headerStyle.top = '0px'
+    //         headerStyle.position = 'absolute'
+    //     } else if (scrollTop < lastScrollTop) {
+    //         headerStyle.top = '-64px'
+    //         headerStyle.position = 'fixed'
+    //     } else {
+    //         headerStyle.top = '-64px'
+    //         setTimeout(() => {
+    //             headerStyle.position = 'fixed'
+    //         }, 500)
+    //     }
+    // } else if (window.screen.width > 760 && window.screen.width <= 975) {
+    //     if (scrollTop < 84) {
+    //         headerStyle.top = '0px'
+    //         headerStyle.position = 'absolute'
+    //     } else if (scrollTop < lastScrollTop) {
+    //         headerStyle.top = '-84px'
+    //         headerStyle.position = 'fixed'
+    //     } else {
+    //         headerStyle.top = '-84px'
+    //         headerStyle.position = 'fixed'
+    //     }
     } else {
         if (scrollTop < 86) {
-            header.style.top = '0px'
-            header.style.position = 'absolute'
+            headerStyle.top = '0px'
+            headerStyle.position = 'absolute'
         } else if (scrollTop < lastScrollTop) {
-            header.style.top = '-86px'
-            header.style.position = 'fixed'
+            headerStyle.top = '-86px'
+            headerStyle.position = 'fixed'
         } else {
-            header.style.top = '-86px'
-            header.style.position = 'fixed'
+            headerStyle.top = '-86px'
+            headerStyle.position = 'fixed'
         }
     }
 
-    lastScrollTop = scrollTop;
     console.log(scrollTop);
     console.log(lastScrollTop);
+    lastScrollTop = scrollTop;
 };
 
 window.addEventListener('scroll', function () {
